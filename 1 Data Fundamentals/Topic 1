@@ -1,5 +1,5 @@
-# Topic 1
-## Building a Data driven Culture
+
+# Building a Data driven Culture
 1. Build Relationships for engagement with key stakeholders
 2. Transparency in Algorithms
    - Simplify complex models & educate on function initially to gain acceptance
@@ -9,7 +9,7 @@
   - pivotal for sustained adoption of a data-driven culture
   - equips personnel with the requisite skills to navigate data-related endeavours effectively
   - Support for additional training comes from demonstrating value from small wins
-## Transitioning to Big Data
+# Transitioning to Big Data
 1. Reasons
   - Inadequate current tools for increase in volume of data
   - Current systems struggle to process the volume of data
@@ -24,7 +24,7 @@
   >  In our modern, data-driven world, understanding the difference between these two types of data is crucial. 
 It's not just about the amount of data we're dealing with but also about the tools, techniques, and strategies we use to handle it. 
 Whether it's a small business analysing customer feedback (Small Data) or a multinational corporation processing millions of transactions per day (Big Data), the way we approach these datasets can have a profound impact on our insights and decisions.
-## Data Characteristics - 5 V's of Big Data
+# Data Characteristics - 5 V's of Big Data
 1. Volume
    - typically terabytes and above, challenges to storage and processing
 2. Variety
@@ -35,7 +35,7 @@ Whether it's a small business analysing customer feedback (Small Data) or a mult
   - reliability, trustworthiness and accuracy. Often contains noisy, incomplete or erroeous data. Significant challenge
 5. Value
   - Potential insights and benefits through advanced analytics, predictive modelling, and data-driven decision-making. 
-## Fundamentals of Data
+# Fundamentals of Data
 1. Volume
   - Byte (B) - 8 bits - single character
   - Kilobyte (KB) 1024 Bytes - short paragraph
