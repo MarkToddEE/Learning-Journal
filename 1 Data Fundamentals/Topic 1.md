@@ -57,7 +57,61 @@ Whether it's a small business analysing customer feedback (Small Data) or a mult
 3. External Data
   - Open & Public - Government published dat such as census data
   - Administrative Data - Data collected by organisations for operational purposes, record keeping or to track performance.
-  - Research Data -
-  - External data - 
+  - Research Data - Data collected through studies, experiments, surveys, observations for research purposes.
+  - External data - Third-party data providers sell access to compiled data sets from various sources
+  - Open and Public - https://datasetsearch.research.google.com
 
-  - 
+# Standards and engineering best practices
+1. Data Formats
+   - JSON - lightweight, human-readable format for transmitting data between servers and web applications, enhancing user experiences and performance.
+   - CSV - format for storing tabular data, facilitating efficient financial management and reporting processes.
+   - XML - XML is a markup language for structuring and exchanging data between systems, promoting interoperability
+2. API standards.
+   - APIs are the foundational building blocks enabling interconnected digital systems and data exchange 
+   - RESTful API - All components of a RESTful API have to follow the same rules to communicate with each other. This also makes it easier to understand interactions between the various components of a system https://www.seobility.net/en/wiki/REST_API
+   - OpenAPI - This term refers to the standard specification for building and documenting RESTful APIs, accelerating development cycles and enhancing collaboration.
+   - Adopting OpenAPI specifications will standardise API's offering richer ecosystem
+3. Cloud computing standards
+   - AWS Well-architected framework
+   - Azure Well-architected framework - provides guidance for building cloud solutions on Microsift Azure
+4. Regulatory requirements
+   - GDPR EU regulation governing data & privacy
+   - ISO 27001 crucial for ensuring the confidentiality, integrity, and availability of data and information assets.
+5. Data stewardship principles
+   - Data quality - Ensuring accuracy and reliability for informed decision-making
+   - Data governance - Establishing policies for managing data assets throughout their lifecycle
+   - Data ethics - Adhering to ethical guidelines for responsible data usage
+6. Engineering best practice
+   - Scalability - Strategies for handling growing data volumes without sacrificing performance, benefiting e-commerce platforms during peak traffic.
+   - Reliability - Implementing redundancy and disaster recovery mechanisms, safeguarding patient data in healthcare information systems.
+   - Security - Employing encryption and access controls to protect sensitive financial data, ensuring compliance with regulatory standards.
+   - Performance Optimisation - Techniques for improving data delivery and system efficiency, enhancing user experiences in content delivery networks.
+   - Data Documentation - documenting data pipelines and system configurations, facilitating collaboration and troubleshooting in software development projects.
+
+# Working with Various Data types
+1. Data Collection
+2. Data cleaning
+3. Data transformation
+4. Data integration
+
+   - Python & Pandas - software library written for Python
+   - SQL - QL is primarily used for querying databases to retrieve specific information or perform operations such as data manipulation, data definition, data control, and data management.
+   - Power BI - provides interactive visualisations and business intelligence capabilities with a simple interface for creating and sharing reports and dashboards.
+   - Tableu - Tableau offers drag-and-drop functionality to create dynamic and interactive visualisations, making it easy for users to explore and understand data insights.
+6. Databses
+
+
+# Summary
+   - There are two main categories of data types: qualitative (nominal, ordinal, binomial) and quantitative (discrete, continuous)
+   - Data is measured using standardised units ranging from bits to yottabytes, with each larger unit being 1,024 times bigger than the previous one
+   - Important technological standards for data engineering include data formats like JSON, CSV, XML, API standards like REST and OpenAPI Specification, and cloud computing standards like AWS Well-Architected Framework
+   - Key regulations governing data include GDPR for data privacy, HIPAA for healthcare data security, and CCPA for consumer privacy rights
+   - The three fundamental principles of data stewardship are data quality, data governance, and data ethics
+   - Engineering best practices for data systems include scalability, reliability, security, performance optimisation, and documentation
+   - The data management lifecycle involves collecting data from sources, cleaning/transforming data, integrating datasets, and visualising insights using tools like SQL, Power BI, and Tableau
+   - Combining internal data with external open data, administrative data, research data, and third-party sources enriches insights for better decision-making
+
+
+
+   
+   
