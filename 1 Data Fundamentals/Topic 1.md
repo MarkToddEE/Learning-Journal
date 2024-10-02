@@ -100,6 +100,11 @@ Whether it's a small business analysing customer feedback (Small Data) or a mult
    - Tableu - Tableau offers drag-and-drop functionality to create dynamic and interactive visualisations, making it easy for users to explore and understand data insights.
 6. Databses
 
+# Data Science Hierarchy of needs
+![image](https://github.com/user-attachments/assets/e99bdff7-e355-4efa-8038-1cc545d9944a)
+
+# Turning data into actionable insight
+![image](https://github.com/user-attachments/assets/8e9acf4d-612a-412c-9b66-08aadb17f8fd)
 
 # Summary
    - There are two main categories of data types: qualitative (nominal, ordinal, binomial) and quantitative (discrete, continuous)
