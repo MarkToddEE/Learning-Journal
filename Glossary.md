@@ -8,3 +8,5 @@
 # Key-value pair
 ![image](https://github.com/user-attachments/assets/9294c30e-b431-444d-aa64-2eba74e1bde4)
 
+# meta data
+https://en.wikipedia.org/wiki/Dublin_Core
