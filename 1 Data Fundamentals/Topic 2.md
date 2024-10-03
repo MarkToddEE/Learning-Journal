@@ -18,7 +18,7 @@
 # Dublin Core Metadata Initiative
 
 
-# Challenges of Unstanardised data
+# Challenges of Unstandardised data
 ![image](https://github.com/user-attachments/assets/8d7ef0d3-b932-466c-9ee4-b5cc9ae8571c)
 
 # Data Formats
