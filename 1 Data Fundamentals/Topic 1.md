@@ -28,13 +28,13 @@ Whether it's a small business analysing customer feedback (Small Data) or a mult
 1. Volume
    - typically terabytes and above, challenges to storage and processing
 2. Variety
-  - types, sources, structured, unstructured, semi structured, different formats
-3.  Velocity
-    - speed of collection, generated and processed. Often streamed from various sources requiring real (or near real) time processing
+   - types, sources, structured, unstructured, semi structured, different formats
+3. Velocity
+   - speed of collection, generated and processed. Often streamed from various sources requiring real (or near real) time processing
 4. Veracity
-  - reliability, trustworthiness and accuracy. Often contains noisy, incomplete or erroeous data. Significant challenge
+   - reliability, trustworthiness and accuracy. Often contains noisy, incomplete or erroeous data. Significant challenge
 5. Value
-  - Potential insights and benefits through advanced analytics, predictive modelling, and data-driven decision-making. 
+   - Potential insights and benefits through advanced analytics, predictive modelling, and data-driven decision-making. 
 # Fundamentals of Data
 1. Volume
   - Byte (B) - 8 bits - single character
