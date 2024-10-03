@@ -22,3 +22,5 @@ Integer - Whole number. Used in Age column
 9. How would you validate the 'EmployeeNumber' column and what needs paying special attention to? 
 - Employee ID maybe sequential, would need to check that every employee ID was showing in the file (eg 3 is missing)
 
+https://github.com/MarkToddEE/Learning-Journal/blob/main/1%20Data%20Fundamentals/IBM%20data.xlsx
+
