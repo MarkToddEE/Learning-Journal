@@ -103,3 +103,29 @@
     - XML Has a schema?
     - XML Shorter
     - XML Easier to read
+![image](https://github.com/user-attachments/assets/cecefb5b-fb28-41d1-87d1-db3401528b50)
+
+# Naming conventions
+![image](https://github.com/user-attachments/assets/d4bf28a2-3b02-45c6-83fe-133428bd5dbf)
+
+# Automated Validation tools
+![image](https://github.com/user-attachments/assets/e7ab306e-b4a9-4cf2-8858-26a87e79314b)
+- Data Quality management platforms
+  - These platforms provide functionalities such as data profiling, cleansing, standardisation, and enrichment, enabling organisations to ensure the accuracy and consistency of their data.
+- Data profiling software
+  - These tools identify data anomalies, such as missing values, duplicate entries, and formatting errors, helping organisations understand the overall quality of their data and prioritise areas for improvement.
+- Data validation frameworks
+  - These frameworks offer customisable rules and metrics for assessing data quality, enabling organisations to define and enforce data quality standards according to their specific requirements.
+ ![image](https://github.com/user-attachments/assets/b2f7ffbe-80ca-4b7e-afd4-797dd4210003)
+# Testing methodologies
+  - Horizontal testing - Testing data consistency and integrity across multiple data sources
+  - Historical analysis - Analysing data quality over time to identify trends, patterns, and anomalies
+  - Rule-based testing - Validating data against predefined rules or criteria.
+  - Statistical testing - Identifying anomalies and outliers within datasets using statistical techniques. 
+
+# Summary
+![image](https://github.com/user-attachments/assets/8daf79c1-2c8b-478c-a087-4d6f0edfcf59)
+
+
+
+
