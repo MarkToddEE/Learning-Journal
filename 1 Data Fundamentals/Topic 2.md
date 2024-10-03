@@ -76,12 +76,14 @@
 # JavaScript Object Notation (JSON)
   - A lightweight data interchange format that offers simplicity and efficiency. It facilitates human readability and machine parsing while providing flexibility in data structuring through key-value pairs and arrays.
   - JSON has become the preferred data format for web applications and Application Programming Interfaces (APIs) due to its simplicity, flexibility, and compatibility with JavaScript. It is widely used for transmitting data between a server and a web application, making it an integral part of modern web development.
-  - 
-
-   
-      
-
-
-
-
-
+  - Strengths
+    - ![image](https://github.com/user-attachments/assets/36453d51-6e30-4048-a339-bf7547c4e47d)
+  - Weaknesses
+    - ![image](https://github.com/user-attachments/assets/d0419032-289a-42e4-ac2f-e291e511bf0b)
+ - Challenges
+   1. Nesting Complexities
+   - JSON allows for deeply nested structures, where objects can contain other objects or arrays of objects.
+   - While this flexibility is beneficial for representing complex data, it can also complicate parsing and increase processing time, especially for large datasets.
+   - Data engineers must carefully design JSON structures to balance complexity and efficiency.
+   2. Key-value pair integrity
+   - 
