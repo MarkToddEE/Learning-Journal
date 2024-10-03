@@ -34,16 +34,16 @@
 
 # Extensible Markup Language (XML)
   - ![image](https://github.com/user-attachments/assets/4aa8127b-b4dc-42a6-a40f-482788214fa0)
-  - Strengths
-    - ![image](https://github.com/user-attachments/assets/e66bcbb4-d20c-4048-9c42-97689311587e)
-  - Weaknesses
-    - ![image](https://github.com/user-attachments/assets/767598cc-096a-4c14-8f5b-efb1deddd039)
-- Challenges
-- 1. Parsing Errors
+  ## Strengths  
+   ![image](https://github.com/user-attachments/assets/e66bcbb4-d20c-4048-9c42-97689311587e)
+  ## Weaknesses
+   ![image](https://github.com/user-attachments/assets/767598cc-096a-4c14-8f5b-efb1deddd039)
+## Challenges
+### Parsing Errors
   - Parsing errors occur when XML documents have improper structure or syntax, leading to failures during parsing, which is the process of converting XML data into a usable format.
   - These errors can result from missing or mismatched tags, incorrect nesting of elements, or invalid characters.
   - To mitigate these issues, it's essential to validate XML documents against predefined schemas, use robust XML parsers, implement error handling mechanisms, sanitise data before parsing, and conduct regular testing and validation.
-  2. Character encoding
+### Character encoding
   - Character encoding issues arise when XML documents contain characters that are not properly encoded or use inconsistent encoding schemes.
   - This can lead to data corruption, rendering issues, or difficulties in processing the XML data correctly.
   - It's crucial to ensure consistent and appropriate character encoding to maintain data integrity.
@@ -51,39 +51,55 @@
       1. Standardise character encoding: Use a consistent character encoding scheme throughout XML documents, such as UTF-8 or UTF-16, to ensure compatibility across different systems and platforms
       2. Encode special characters: Properly encode special characters, such as &, <, >, ", and ', using their corresponding character entities (&, <, >, ", and ') to prevent parsing errors and data corruption
       3. Validate encoding: Validate XML documents to ensure that character encoding declarations match the actual encoding used within the document. This helps detect and correct inconsistencies or mismatches in encoding
-  3. Schema Validation
+### Schema Validation
   - Schema validation involves verifying that XML documents adhere to a predefined schema or structure, which defines the allowable elements, attributes, and their relationships.
   - Non-compliance with the schema can lead to data inconsistency, interoperability issues, and errors during data processing.
   - Adhering to a defined schema helps maintain data consistency and ensures compatibility with other systems or applications that rely on the XML data.
 # Comma-Separated Values (CSV)
-  - Strengths
-    - ![image](https://github.com/user-attachments/assets/8af10074-c067-45b8-8b27-7936fea08ce9)
-  - Weaknesses
-    - ![image](https://github.com/user-attachments/assets/0596173c-1ff7-4170-bfe0-47c16b236c14)
-  - Challenges
-  - 1. Inconsistent formats
-    - Inconsistencies in delimiters, encapsulators, or line terminators across CSV files can disrupt data parsing and interpretation.
-    - To mitigate this challenge and data quality issue you can standardise the use of delimiters, encapsulators, and line terminators across all CSV files.
-    - Implement robust parsing algorithms capable of handling variations in formats. 
-    2.  Data type mismatch
-    - The absence of explicit data types in CSV files can result in misinterpretation of data, leading to incorrect analysis.
-    - To mitigate this challenge and data quality issue you can provide metadata or schema information alongside CSV files to specify data types.
-    - You can also perform data validation and type casting during parsing to ensure consistency.
-    3. Header Misalignment
-    - Missing or misaligned headers in CSV files can lead to errors in data mapping and processing.
-    - To mitigate this challenge and data quality issue its important to ensure that all CSV files have consistent headers and alignment.
-    - Implement error handling mechanisms to detect and rectify header misalignment issues.  
+  ## Strengths
+   ![image](https://github.com/user-attachments/assets/8af10074-c067-45b8-8b27-7936fea08ce9)
+  ## Weaknesses
+   ![image](https://github.com/user-attachments/assets/0596173c-1ff7-4170-bfe0-47c16b236c14)
+## Challenges
+### Inconsistent formats
+  - Inconsistencies in delimiters, encapsulators, or line terminators across CSV files can disrupt data parsing and interpretation.
+  - To mitigate this challenge and data quality issue you can standardise the use of delimiters, encapsulators, and line terminators across all CSV files.
+  - Implement robust parsing algorithms capable of handling variations in formats. 
+### Data type mismatch
+  - The absence of explicit data types in CSV files can result in misinterpretation of data, leading to incorrect analysis.
+  - To mitigate this challenge and data quality issue you can provide metadata or schema information alongside CSV files to specify data types.
+  - You can also perform data validation and type casting during parsing to ensure consistency.
+### Header Misalignment
+  - Missing or misaligned headers in CSV files can lead to errors in data mapping and processing.
+  - To mitigate this challenge and data quality issue its important to ensure that all CSV files have consistent headers and alignment.
+  - Implement error handling mechanisms to detect and rectify header misalignment issues.  
 # JavaScript Object Notation (JSON)
   - A lightweight data interchange format that offers simplicity and efficiency. It facilitates human readability and machine parsing while providing flexibility in data structuring through key-value pairs and arrays.
   - JSON has become the preferred data format for web applications and Application Programming Interfaces (APIs) due to its simplicity, flexibility, and compatibility with JavaScript. It is widely used for transmitting data between a server and a web application, making it an integral part of modern web development.
-  - Strengths
-    - ![image](https://github.com/user-attachments/assets/36453d51-6e30-4048-a339-bf7547c4e47d)
-  - Weaknesses
-    - ![image](https://github.com/user-attachments/assets/d0419032-289a-42e4-ac2f-e291e511bf0b)
- - Challenges
-   1. Nesting Complexities
+  ## Strengths
+   ![image](https://github.com/user-attachments/assets/36453d51-6e30-4048-a339-bf7547c4e47d)
+  ## Weaknesses
+   ![image](https://github.com/user-attachments/assets/d0419032-289a-42e4-ac2f-e291e511bf0b)
+ ## Challenges
+   ### Nesting Complexities
    - JSON allows for deeply nested structures, where objects can contain other objects or arrays of objects.
    - While this flexibility is beneficial for representing complex data, it can also complicate parsing and increase processing time, especially for large datasets.
    - Data engineers must carefully design JSON structures to balance complexity and efficiency.
-   2. Key-value pair integrity
-   - 
+  ### Key-value pair integrity
+   - Consistent key naming is essential in JSON to ensure the integrity and usability of the data.
+   - Inconsistent key naming or missing/extra keys can lead to errors in data interpretation and processing.
+   - Data engineers must establish naming conventions and validation rules to maintain key-value pair integrity across JSON documents.
+  ### Data Volume
+  - Handling large JSON files can pose challenges in terms of memory usage, processing time, and network bandwidth.
+  - Data engineers must consider the scalability and performance implications of working with large JSON datasets and implement appropriate solutions to address these challenges.
+  - Strategies for efficient processing include data streaming, pagination, compression, and distributed processing.
+
+# XML to JSON conversion
+  - https://www.freeformatter.com/xml-to-json-converter.html
+  - https://www.convertjson.com/xml-to-json.htm
+  - ![image](https://github.com/user-attachments/assets/2ca25023-feca-4cbb-9ef0-638ef0b04e6d) ![image](https://github.com/user-attachments/assets/bd36b0f0-4d6c-4e2a-8ce4-5e328246da60)
+
+  - Differences
+    - XML Has a schema?
+    - XML Shorter
+    - XML Easier to read
