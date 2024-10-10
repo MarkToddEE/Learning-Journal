@@ -18,8 +18,12 @@
      -- Scrum Roles
       - Scrum Master
         - The scrum master acts as a shield, protecting the team from external distractions and noise, thereby enabling them to focus solely on delivering value.
+      ![image](https://github.com/user-attachments/assets/90c5a735-11b6-4635-9091-abd7ca690ff1)
+
       - Product Owner
         - The product owner serves as a bridge between the technical team and organisational objectives, ensuring alignment and maximising value delivery.
+        ![image](https://github.com/user-attachments/assets/a0b863a7-49a7-4a07-9573-2e5f112e6714)
+
       - Team Member
         - Comprising data scientists, engineers, and analysts, the team members collectively bring diverse skill sets and expertise to the project.
 
