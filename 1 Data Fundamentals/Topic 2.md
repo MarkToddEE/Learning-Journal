@@ -127,5 +127,26 @@
 ![image](https://github.com/user-attachments/assets/8daf79c1-2c8b-478c-a087-4d6f0edfcf59)
 
 
+# Data Quality checks
+  - Schema Validation
+    -- What is it? Ensures data adheres to a predefined data model or schema
+How does it do it? Maintains consistency by aligning data types with schema definitions
+Example: Validating a JSON file against a JSON schema
+  - Syntax checking
+   -- What is it? Automates the detection of syntax errors in data files
+How does it do it? Checks for missing or extra delimiters, incorrect field separators, or misplaced quotation marks
+Example: Scanning a CSV file for comma inconsistencies or missing line terminators
+  - Range Verification
+   -- What is it? Checks if data values fall within specified ranges or constraints
+How does it do it? Identifies out-of-range or invalid values based on predefined rules
+Example: Verifying that an age value is within a valid range (e.g., 0-120 years)
+  - Pattern Recognition
+   -- What is it? Validates data against predefined patterns or regular expressions
+How does it do it? Useful for enforcing specific formats or structures (e.g., email addresses, phone numbers)
+Example: Ensuring email addresses follow a valid pattern (name@domain.com)
+  - Consistency checks
+   -- What is it? Validates data against predefined patterns or regular expressions
+How does it do it? Useful for enforcing specific formats or structures (e.g., email addresses, phone numbers)
+Example: Ensuring email addresses follow a valid pattern (name@domain.com)
 
-
+# Automating Data Quality Management
