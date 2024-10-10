@@ -76,9 +76,24 @@
    - Lean methodologies encourage the elimination of non-value-adding activities and focus on streamlining processes. 
    - In the context of identifying data sources and understanding data processing concepts and methods, Lean can facilitate quicker and more efficient decision-making regarding which data sources to prioritise and which data processing methods are most efficient for the task at hand. 
    - Six Sigma adds to this by using data-driven techniques to identify variances in data quality and processing efficiency, allowing for a more precise selection of data sources and methodologies.
+
+
+![image](https://github.com/user-attachments/assets/a7f86b1f-1487-4957-b548-7b9e14b79d24)
+
+
+
+
+
 ## Effective stakeholder engagement
 
 ![image](https://github.com/user-attachments/assets/efc9771e-fa2a-48a3-8aec-3a82ad5e60a9)
 
  
+![image](https://github.com/user-attachments/assets/cf3e6871-cef7-448e-bbea-6365390ef75f)
+
+Jira:
+https://l5de.atlassian.net/
+
+![image](https://github.com/user-attachments/assets/93494f85-ecad-4994-9eec-eb393e162da1)
+
 
