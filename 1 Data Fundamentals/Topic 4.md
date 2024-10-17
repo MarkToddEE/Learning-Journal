@@ -57,4 +57,49 @@
   - Fault isolation - If one service fails, it does not bring down the entire application, ensuring better resilience and availability.
   - API Gateway - The API gateway acts as a single-entry point for clients, decoupling them from the internal services and enabling cross-cutting concerns like authentication, logging, and load balancing.
 # Designing data products visually
-  - Data Product -valuable assets created by transforming raw data into actionable insights, tools, or services that deliver tangible value to the organisation and its stakeholders. 
+  - Data Product -valuable assets created by transforming raw data into actionable insights, tools, or services that deliver tangible value to the organisation and its stakeholders.
+    - Dahboards - Visual interfaces that display key metrics, KPIs, and trends in real-time, allowing stakeholders to monitor performance and make data-driven decisions.
+    - Reports - Detailed analyses and summaries of data, often presented in written or visual formats, to provide insights into specific business areas or trends.
+    - APIs - Interfaces that allow different software applications to communicate and exchange data, enabling seamless integration and automation of processes.
+    - Data Feeds - Streams of raw or processed data delivered in real-time or batch mode, often used for analytics, machine learning, or feeding other systems and applications.
+   
+## Visual Modelling
+  - Wireframes
+    - Purpose: Provide a basic structural outline of the data product, emphasising functionality over aesthetics.
+    - Example: A wireframe for an HR dashboard shows the arrangement of elements and user interactions without detailed styling.
+  - Mockups
+    - Purpose: Add aesthetic elements like colour schemes and fonts to wireframes, offering stakeholders a more realistic view of the final product.
+    - Example: A mockup of the HR dashboard includes colour, typography, and preliminary interactive designs.
+  - Prototypes
+    - Purpose: Simulate user interactions with the product, instrumental in identifying usability issues before final development.
+    - Use in usability testing: Central to testing user interactions and behaviours, providing insights for improvement.
+    - 
+# Navigating data seas with architectural governance
+
+  - The Open Group Architecture Framework (TOGAF) serves as a governance framework that ensures alignment with business goals, compliance with regulatory requirements, and promotes standardisation in data architecture. 
+  - Usage patterns - Understanding how different user groups interact with the system aids in designing user-centric architectures.
+  - Data flow - Visualising how data moves through systems identifies potential bottlenecks and security risks.
+  - Physical setup - Considering the physical deployment of resources impacts performance, redundancy, and disaster recovery strategies.
+  - Networking - Outlining network topologies and protocols ensures efficient data transfer and compliance with security policies.
+  - Integrating these features enhances data governance as follows:
+  ![image](https://github.com/user-attachments/assets/73f77e03-a2f8-4472-a49b-1f55fd7ea273)
+
+  - Diagrams should enforce and track compliance with both internal policies and external regulations, as follows:
+      - Illustrating compliance checkpoints: Showing where and how compliance checks are integrated within the architecture
+      - Role-based access control: Mapping out data access permissions ensures only authorised personnel can access sensitive data, supporting compliance with data protection regulations
+      - Security protocols: Visualising security mechanisms reinforces the system’s defence against breaches.
+
+
+  # Summary
+  - Diagrams act as visual maps to simplify complexity and promote alignment among teams in project management
+  - Sequence diagrams are a type of UML diagram used to visualise the timing and interactions between components within a system
+  - Use case diagrams provide a visual representation of how users interact with a system, aiding in understanding functional requirements
+  - Entity Relationship Diagrams (ERDs) illustrate the relationships between different data entities within an application or database
+  - In a three-layered data architecture:
+    - Data storage layer uses databases or data lakes for data persistence
+    - Data processing layer uses frameworks like Apache Spark for operations like filtering, sorting, transformation
+    - Presentation layer displays data to end-users via dashboards or reports
+  - A microservices architecture breaks down an application into small, independent services focused on specific business capabilities that can be developed, deployed, and scaled independently
+  - The API gateway acts as the entry point for clients in a microservices architecture, decoupling them from internal services and enabling cross-cutting concerns like authentication and logging
+    
+
