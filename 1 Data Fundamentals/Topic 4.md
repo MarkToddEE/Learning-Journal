@@ -1,6 +1,7 @@
 # Introduction to reliable data architectures
 
 ## Unlocking data architecture success with diagrams
+![image](https://github.com/user-attachments/assets/dd35fb21-0fde-4d8d-a7f2-961944935af9)
 
 - An architecture diagram
   - Explains what you’re building
@@ -27,9 +28,9 @@
     ![image](https://github.com/user-attachments/assets/a355cb5d-c664-4ab1-9912-922d3be3e792)
   
     ### Sequence Diagrams
-      - Visualising interactions - Sequence diagrams offer a clear visual representation of how different components work together, simplifying the understanding of complex systems.
-      - Enhancing communication - These diagrams improve communication by detailing the sequence of interactions, the roles of the participants, and the nature of the messages exchanged.
-      - Validation - Sequence diagrams act as a blueprint for project validation, ensuring that the system or process operates as designed.
+  - Visualising interactions - Sequence diagrams offer a clear visual representation of how different components work together, simplifying the understanding of complex systems.
+  - Enhancing communication - These diagrams improve communication by detailing the sequence of interactions, the roles of the participants, and the nature of the messages exchanged.
+  - Validation - Sequence diagrams act as a blueprint for project validation, ensuring that the system or process operates as designed.
         
 ![image](https://github.com/user-attachments/assets/71ffc118-64ca-487c-819a-8eb11358e0db)
 
