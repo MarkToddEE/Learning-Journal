@@ -51,6 +51,9 @@
 
  ![image](https://github.com/user-attachments/assets/671bb184-b4a4-4e95-9828-ad2049f6cf09)
 
+## Agile vs Lean
+![image](https://github.com/user-attachments/assets/8002106e-e320-40fe-9155-1d5e0bfde9eb)
+
 
  ## Applying Lean and Six Sigma principles
   # Lean
