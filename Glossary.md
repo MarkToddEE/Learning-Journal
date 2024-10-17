@@ -12,3 +12,5 @@
 https://en.wikipedia.org/wiki/Dublin_Core
 # data products 
   – valuable assets created by transforming raw data into actionable insights, tools, or services that deliver tangible value to the organisation and its stakeholders. 
+# Lucid Chart: 
+  - https://lucid.app/documents#/templates
