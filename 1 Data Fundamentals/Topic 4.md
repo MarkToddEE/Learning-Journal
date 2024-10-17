@@ -2,7 +2,28 @@
 
 ## Unlocking data architecture success with diagrams
 
-  - Unified modelling language (UML) diagrams
+- An architecture diagram
+  - Explains what you’re building
+  - How stakeholders will interact with it
+  - The constraints of the system
+  - Is often drawn as layers
+- A design diagram
+  - Normally does not have stakeholders, constraints or layers
+  - Focuses on one part of the system and shows its building blocks
+
+  ![image](https://github.com/user-attachments/assets/0ec66d32-a5b6-4824-a322-722326c9a4d9)
+
+![image](https://github.com/user-attachments/assets/3a84e6f9-0982-4002-9a56-090d55b488a6)
+
+- Flowcharts
+![image](https://github.com/user-attachments/assets/349e506d-9967-4e68-b36a-160703526093)
+![image](https://github.com/user-attachments/assets/47422f4b-d745-44bc-b302-4169c0b90771)
+![image](https://github.com/user-attachments/assets/12a470f7-b3c4-4c89-bfa6-dbe5e9d29475)
+![image](https://github.com/user-attachments/assets/fb0b493c-25bf-4478-9b06-9e7a748b4889)
+
+
+
+- Unified modelling language (UML) diagrams
     ![image](https://github.com/user-attachments/assets/a355cb5d-c664-4ab1-9912-922d3be3e792)
   
     ### Sequence Diagrams
