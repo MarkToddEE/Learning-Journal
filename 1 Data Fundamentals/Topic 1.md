@@ -94,7 +94,8 @@ Whether it's a small business analysing customer feedback (Small Data) or a mult
 3. Data transformation
 4. Data integration
 
-   - Python & Pandas - software library written for Python
+   - Python - High level programming language
+   - Pandas - software library written for Python : https://pandas.pydata.org/
    - SQL - QL is primarily used for querying databases to retrieve specific information or perform operations such as data manipulation, data definition, data control, and data management.
    - Power BI - provides interactive visualisations and business intelligence capabilities with a simple interface for creating and sharing reports and dashboards.
    - Tableu - Tableau offers drag-and-drop functionality to create dynamic and interactive visualisations, making it easy for users to explore and understand data insights.
@@ -115,6 +116,7 @@ Whether it's a small business analysing customer feedback (Small Data) or a mult
    - Engineering best practices for data systems include scalability, reliability, security, performance optimisation, and documentation
    - The data management lifecycle involves collecting data from sources, cleaning/transforming data, integrating datasets, and visualising insights using tools like SQL, Power BI, and Tableau
    - Combining internal data with external open data, administrative data, research data, and third-party sources enriches insights for better decision-making
+[L5 DE 1.2 Practical - ANSWERS.xlsx](https://github.com/user-attachments/files/17715423/L5.DE.1.2.Practical.-.ANSWERS.xlsx)
 
 
 
