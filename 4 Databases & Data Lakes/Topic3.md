@@ -47,3 +47,144 @@
 - I Isolation Transactions do not affect each other. Isolation ensures that concurrent execution of transactions leaves the database in the same state that would have been obtained if the transactions were executed serially.Provides the illusion that each transaction is the only one interacting with the database at that time. This is achieved by various concurrency control mechanisms, ensuring that transactions do not affect each other adversely.
 - D Durability Written data will not be lost. Durability guarantees that once a transaction has been committed, it will remain so, even in the event of a power loss, crashes, or errors.
 # Writing Nested CRUD SQL Queries
+- Nested Create - While SQL doesn't directly support nested 'CREATE' statements, complex 'CREATE' operations can involve subqueries to define or populate new tables based on existing data. For example, creating a new table that aggregates existing customer data but only includes those who meet certain spending thresholds.
+- Nested Read - This is commonly used in reports and data analysis, where information from different parts of the database needs to be consolidated. For example, selecting customer data where the customer’s spending is above the average within their demographic.
+- Nested Update - Useful in scenarios where the update criteria or the values to be updated depend on another query. For instance, increasing the price of products in a catalogue only if their stock levels are below a certain threshold.
+- Nested Delete - Applied when certain deletion criteria are complex and depend on other data elements. For example, deleting records of a promotional campaign that did not reach any customers in specific regions.
+
+UPDATE Inventory
+SET status = 'Low Stock'
+WHERE product_id IN (
+    SELECT product_id
+    FROM Sales
+    WHERE sale_date BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND NOW()
+    GROUP BY product_id
+    HAVING SUM(sales_quantity) > 0.75 * (SELECT stock_quantity FROM Inventory 
+WHERE Inventory.product_id = Sales.product_id)
+) AND restocking_date > DATE_ADD(NOW(), INTERVAL 2 WEEK);
+
+Sets the 'status' field in the 'Inventory' table to "Low Stock" using 'product_id' as a common field
+All product id's from Sales that have a Sales date in the last month and the quantity sold is 3/4 of the 'stock quantity' from Inventory
+And, where the restocking date is > 2 weeks away
+
+## Understanding Nested and Correlated Queries in SQL
+### Correlated Queries
+
+SELECT * FROM Customers c
+WHERE EXISTS (
+  SELECT 1 FROM Orders o
+  WHERE o.CustomerID = c.CustomerID
+);
+
+- Corelated Queries run for each outer row but as a result can be slower to run. Rely on outer queries. Use correlated queries for complex conditions involving row comparisons. 
+- Nested queries run once, are quicker and are independant
+
+## Joins and Database Normalisation
+
+### The Role of Joins
+  - Joins are critical in relational databases as they facilitate the retrieval of information dispersed across multiple tables. The ability to join tables allows databases to store information in a normalised form while still being able to present a unified view of related data when necessary.
+![SQL Join 2](https://github.com/user-attachments/assets/a262060d-2c6e-45e3-aad1-035ecfeaa72a)
+
+
+- Inner Join - Retrieves rows that have matching values in both tables.
+  SELECT column, another_table_column, …
+FROM mytable
+INNER JOIN another_table 
+    ON mytable.id = another_table.id
+WHERE condition(s)
+ORDER BY column, … ASC/DESC
+
+  ![image](https://github.com/user-attachments/assets/5148cf68-b698-436a-8ee7-968dd75bc5bb)
+  ![image](https://github.com/user-attachments/assets/0168373d-79d8-41aa-9a63-628187352d54)
+![image](https://github.com/user-attachments/assets/6e7daaa8-7e50-4598-9855-610c3348ed0a)
+
+
+- Outer Join (Left, Right and Full) - Retrieves matching rows in both tables and some unmatched rows in one or both tables, depending on the type of outer join.
+SELECT column, another_column, …
+FROM mytable
+INNER/LEFT/RIGHT/FULL JOIN another_table 
+    ON mytable.id = another_table.matching_id
+WHERE condition(s)
+ORDER BY column, … ASC/DESC
+LIMIT num_limit OFFSET num_offset;
+
+  ![image](https://github.com/user-attachments/assets/dafffc9d-95f8-4d6b-9588-eb2fa218bc39)
+
+- Dealing with Nulls
+SELECT column, another_column, …
+FROM mytable
+WHERE column IS/IS NOT NULL
+AND/OR another_condition
+AND/OR …;
+![image](https://github.com/user-attachments/assets/5d8ffabd-ecc3-4eea-b73d-718be45759e5)
+![image](https://github.com/user-attachments/assets/6893014b-412f-4095-868d-8875ce30e2a0)
+
+  
+- Cross Join - Produces a Cartesian product of the rows in the tables involved in the join.
+- Queries with expressions
+- 
+  SELECT col_expression AS expr_description, …
+FROM mytable;
+![image](https://github.com/user-attachments/assets/bfbe564e-cdde-4ae0-a2d7-65aad2be6036)
+![image](https://github.com/user-attachments/assets/c2ba7a44-cd2f-43df-9fc4-2a11f3545b5f)
+% is the Modulus after dividing by 2 ie the remainder
+
+
+### Normalisation
+- First Normal Form - Ensures all columns hold atomic values and each record is unique.
+- Second Normal Form - Requires that all non-key attributes are fully functional dependent on the primary key.
+- Third Normal Form - Ensures that no transitive dependencies exist between non-key attributes and the primary key.
+
+https://www.dummies.com/article/technology/programming-web-design/sql-first-second-and-third-normal-forms-160848/
+
+## GroupBy, Aggregation, and Windowing in SQL
+![image](https://github.com/user-attachments/assets/c0545c23-6a48-44d9-9241-6312dbc80816)
+
+SELECT AGG_FUNC(column_or_expression) AS aggregate_description, …
+FROM mytable
+WHERE constraint_expression
+GROUP BY column;
+
+![image](https://github.com/user-attachments/assets/795c0b3f-35bf-433e-8011-df6215f44769)
+![image](https://github.com/user-attachments/assets/58f1f462-5c1e-4308-ba6c-4c6447d9451b)
+
+Select query with HAVING constraint
+SELECT group_by_column, AGG_FUNC(column_expression) AS aggregate_result_alias, …
+FROM mytable
+WHERE condition
+GROUP BY column
+HAVING group_condition;
+
+![image](https://github.com/user-attachments/assets/fc7198f7-b887-41f2-935d-d355b422c96e)
+
+![image](https://github.com/user-attachments/assets/19facd42-d03f-48da-95bb-3c85f3c598d2)
+
+## Order of execution of a Query
+
+1. FROM and JOINs
+The FROM clause, and subsequent JOINs are first executed to determine the total working set of data that is being queried. This includes subqueries in this clause, and can cause temporary tables to be created under the hood containing all the columns and rows of the tables being joined.
+
+2. WHERE
+Once we have the total working set of data, the first-pass WHERE constraints are applied to the individual rows, and rows that do not satisfy the constraint are discarded. Each of the constraints can only access columns directly from the tables requested in the FROM clause. Aliases in the SELECT part of the query are not accessible in most databases since they may include expressions dependent on parts of the query that have not yet executed.
+
+3. GROUP BY
+The remaining rows after the WHERE constraints are applied are then grouped based on common values in the column specified in the GROUP BY clause. As a result of the grouping, there will only be as many rows as there are unique values in that column. Implicitly, this means that you should only need to use this when you have aggregate functions in your query.
+
+4. HAVING
+If the query has a GROUP BY clause, then the constraints in the HAVING clause are then applied to the grouped rows, discard the grouped rows that don't satisfy the constraint. Like the WHERE clause, aliases are also not accessible from this step in most databases.
+
+5. SELECT
+Any expressions in the SELECT part of the query are finally computed.
+
+6. DISTINCT
+Of the remaining rows, rows with duplicate values in the column marked as DISTINCT will be discarded.
+
+7. ORDER BY
+If an order is specified by the ORDER BY clause, the rows are then sorted by the specified data in either ascending or descending order. Since all the expressions in the SELECT part of the query have been computed, you can reference aliases in this clause.
+
+8. LIMIT / OFFSET
+Finally, the rows that fall outside the range specified by the LIMIT and OFFSET are discarded, leaving the final set of rows to be returned from the query.
+
+![image](https://github.com/user-attachments/assets/4d64148e-6277-418c-a266-f7cf31eac834)
+![image](https://github.com/user-attachments/assets/abd7dab2-90a7-4ba4-b646-6d98c10345d0)
+
