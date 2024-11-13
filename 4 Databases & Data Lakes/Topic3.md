@@ -188,3 +188,21 @@ Finally, the rows that fall outside the range specified by the LIMIT and OFFSET 
 ![image](https://github.com/user-attachments/assets/4d64148e-6277-418c-a266-f7cf31eac834)
 ![image](https://github.com/user-attachments/assets/abd7dab2-90a7-4ba4-b646-6d98c10345d0)
 
+## Data Definition Language (DDL)
+![image](https://github.com/user-attachments/assets/b4978415-135d-498b-b320-93fd4971280f)
+
+![image](https://github.com/user-attachments/assets/b4027955-0871-45a8-a264-2523c4ac837d)
+![image](https://github.com/user-attachments/assets/19e87589-212a-4138-a366-1d2ebd0634dc)
+![image](https://github.com/user-attachments/assets/0a7c5c91-7c4d-4e96-a666-7ec8c767f7aa)
+
+## Indexes
+![image](https://github.com/user-attachments/assets/1251de44-8d43-40ec-aa5c-ea2edc62d48e)
+![image](https://github.com/user-attachments/assets/83b36aad-9282-4d09-90c1-2ef560cc5a3f)
+![image](https://github.com/user-attachments/assets/b7b963ad-37bc-46d4-ba76-dec81035622e)
+![image](https://github.com/user-attachments/assets/1c412e09-b4ac-49f4-bb12-b174472db870)
+
+## Defining Views
+
+
+
+
