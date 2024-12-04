@@ -52,6 +52,33 @@ rm - Remove files or Directories. Files are removed permanently
   - https://www.ionos.co.uk/digitalguide/server/configuration/linux-rm-command/
 mv - move or rename files/directories 
 cp - copy files/directories
+
+
+pwd - Print working directory ie current path back to root
+cd - change directory. cd Documents moves down to Documents file, cd / moves up to the next  level (cd .. is the same). cd ~ returns to the root
+ls - lists information of current location
+arguments
+  - -l shows details about files
+![image](https://github.com/user-attachments/assets/d1bbbad7-c789-48e5-903b-146edb966e17)
+  - lt - sorts details by timestamp
+  - -lS sort by file size
+  - -r reverses sort order
+![image](https://github.com/user-attachments/assets/62ae56f9-ae45-451f-b2a3-0a3f7068950b)
+
+
+SuperUser
+- su - password protected. Cursor chages from $ to #
+- 'exit' to logoff
+- sudo - use superuser access for one time execution. Password protected Can be used for other user accounts using -u
+Changing permisiisions
+chmod
+![image](https://github.com/user-attachments/assets/f3e8e123-af29-4c15-b863-7e1b8c205cc1)
+![image](https://github.com/user-attachments/assets/324eb596-bf8c-40ee-80e3-b6d40169e572)
+changes user permission to executable on the hello.sh file
+
+Execute a file - ./ filename
+
+
 ## Linux Utilities
 ### Global regular expression print (grep)
  - The primary function of grep is to search for and highlight specific text patterns within files.
