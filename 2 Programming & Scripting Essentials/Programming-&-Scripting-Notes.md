@@ -70,7 +70,7 @@ SuperUser
 - su - password protected. Cursor chages from $ to #
 - 'exit' to logoff
 - sudo - use superuser access for one time execution. Password protected Can be used for other user accounts using -u
-Changing permisiisions
+Changing permissions
 chmod
 ![image](https://github.com/user-attachments/assets/f3e8e123-af29-4c15-b863-7e1b8c205cc1)
 ![image](https://github.com/user-attachments/assets/324eb596-bf8c-40ee-80e3-b6d40169e572)
