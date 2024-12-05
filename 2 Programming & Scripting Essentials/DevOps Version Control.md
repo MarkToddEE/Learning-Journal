@@ -12,6 +12,13 @@ For data engineers, version control extends beyond code. It includes managing co
 
 By using VCS, data engineers can maintain a history of changes, collaborate more effectively with team members, and ensure that data processing tasks are consistent and reproducible.
 
+
+![image](https://github.com/user-attachments/assets/e13383f6-80e6-4425-b5b2-09a5e2a01c74)
+
+![image](https://github.com/user-attachments/assets/d53013c9-b6f9-4f24-b66c-849ab08b0680)
+
+
+
 ## Continuous Integration and Continuous Deployment (CI/CD) 
 
 Continuous Integration (CI) involves frequently integrating code changes into a shared repository, where automated tests validate the changes. Continuous Deployment (CD) automates the release of validated changes to production. For data engineers, CI/CD pipelines automate the deployment of data products, ensuring they are tested and released rapidly and reliably. 
