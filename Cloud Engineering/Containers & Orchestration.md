@@ -21,3 +21,10 @@ Suitable for Cloud computing
 ## What are the disadvantages of Containerisation
 Less secure than VM
 Suseptable to data leaks through security flaws
+
+## What are the advantages of VM
+Secure - isolation between VMs
+
+## What are the disadvantages of VM
+Slower deplyment
+Higher overheads
